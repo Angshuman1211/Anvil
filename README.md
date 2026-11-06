@@ -11,13 +11,13 @@
   <img src="https://img.shields.io/badge/FastAPI-REST_API-009688?logo=fastapi&logoColor=white" />
   <img src="https://img.shields.io/badge/HuggingFace-Spaces-FFD21E?logo=huggingface&logoColor=black" />
   <img src="https://img.shields.io/badge/License-MIT-22c55e" />
-  <img src="https://img.shields.io/github/actions/workflow/status/Ganglet/Anvil/docker-publish.yml?label=Docker%20CI&logo=github" />
+  <img src="https://img.shields.io/github/actions/workflow/status/angshuman1211/Anvil/docker-publish.yml?label=Docker%20CI&logo=github" />
 </p>
 
 <h3 align="center">Autonomous ML Red-Teaming · Attack · Cluster · Explain · Patch · Report</h3>
 
 <p align="center">
-  <a href="https://ganglet.github.io/Anvil"><strong>Live Demo →</strong></a> &nbsp;|&nbsp;
+  <a href="https://angshuman1211.github.io/Anvil"><strong>Live Demo →</strong></a> &nbsp;|&nbsp;
   <a href="https://angshuman12-anvil.hf.space/docs"><strong>API →</strong></a>
 </p>
 
@@ -116,7 +116,7 @@ GET  /report/{filename}  →  PDF stream
 GET  /health           →  { status: "ok" }
 ```
 
-Async job management via FastAPI `BackgroundTasks`. In-memory job store with polling. CORS configured for `ganglet.github.io`. Deployed via Docker on HuggingFace Spaces (free tier, 16 GB RAM).
+Async job management via FastAPI `BackgroundTasks`. In-memory job store with polling. CORS configured for `angshuman1211.github.io`. Deployed via Docker on HuggingFace Spaces (free tier, 16 GB RAM).
 
 ---
 
@@ -150,7 +150,7 @@ anvil-serve                          # API server on :8000
 **From source**
 
 ```bash
-git clone https://github.com/Ganglet/Anvil
+git clone https://github.com/angshuman1211/Anvil
 cd Anvil/Anvil_Project
 pip install -e .
 
@@ -164,11 +164,11 @@ python audit.py --model resnet18 --budget 50
 **Docker**
 
 ```bash
-docker pull ghcr.io/ganglet/anvil:latest
-docker run -p 8000:8000 ghcr.io/ganglet/anvil:latest
+docker pull ghcr.io/angshuman1211/anvil:latest
+docker run -p 8000:8000 ghcr.io/angshuman1211/anvil:latest
 ```
 
-Use the hosted demo at **[ganglet.github.io/Anvil](https://ganglet.github.io/Anvil)** — upload images, get a full PDF audit report back.
+Use the hosted demo at **[angshuman1211.github.io/Anvil](https://angshuman1211.github.io/Anvil)** — upload images, get a full PDF audit report back.
 
 ---
 
@@ -187,7 +187,7 @@ Anvil_Project/
 ├── audit.py          # CLI entry point
 ├── requirements.txt
 ├── Dockerfile
-└── frontend/         # React + Vite source for ganglet.github.io/Anvil
+└── frontend/         # React + Vite source for angshuman1211.github.io/Anvil
 ```
 
 ---

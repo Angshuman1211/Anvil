@@ -55,8 +55,8 @@ anvil = "audit:main"
 anvil-serve = "api:app"
 
 [project.urls]
-Homepage = "https://ganglet.github.io/Anvil"
-Repository = "https://github.com/Ganglet/Anvil"
+Homepage = "https://angshuman1211.github.io/Anvil"
+Repository = "https://github.com/angshuman1211/Anvil"
 "API (HuggingFace)" = "https://angshuman12-anvil.hf.space"
 
 [tool.setuptools.packages.find]

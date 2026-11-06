@@ -44,7 +44,7 @@ function Nav() {
         <a href="#pipeline" className="hover:text-white transition-colors">Pipeline</a>
         <a href="#demo" className="hover:text-white transition-colors">Demo</a>
         <a href="#stack" className="hover:text-white transition-colors">Stack</a>
-        <a href="https://github.com/Ganglet/Anvil" target="_blank" rel="noopener noreferrer"
+        <a href="https://github.com/angshuman1211/Anvil" target="_blank" rel="noopener noreferrer"
           className="hover:text-white transition-colors" style={{ color: 'var(--teal)' }}>GitHub ↗</a>
       </div>
     </nav>
@@ -175,7 +175,7 @@ function PipelineSection() {
     {
       num: '08', title: 'REST\nAPI', subtitle: 'FastAPI + Docker on HuggingFace',
       body: 'FastAPI wraps the entire pipeline with async job management. Submit images, get a job ID, poll for status, download the PDF — all over HTTP.',
-      bullets: ['POST /audit/upload — multipart images + model + budget → job_id', 'GET /audit/job/{id} — polls {status, vulnerability_score, clusters_found}', 'GET /report/{filename} — streams the PDF', 'CORS configured for ganglet.github.io'],
+      bullets: ['POST /audit/upload — multipart images + model + budget → job_id', 'GET /audit/job/{id} — polls {status, vulnerability_score, clusters_found}', 'GET /report/{filename} — streams the PDF', 'CORS configured for angshuman1211.github.io'],
       code: `# Submit audit\ncurl -X POST \\\n  https://angshuman12-anvil.hf.space\\\n  /audit/upload \\\n  -F "files=@cat.jpg" \\\n  -F "model=resnet18" \\\n  -F "budget=25"\n# → {"job_id": "abc-123"}\n\n# Poll status\ncurl https://angshuman12-anvil\\\n  .hf.space/audit/job/abc-123\n# → {"status":"complete",\n#    "clusters_found":3,\n#    "report_filename":"audit_...pdf"}`,
       bg: 'var(--bg)', text: 'var(--text)', accent: 'var(--teal-light)',
     },
@@ -467,7 +467,7 @@ function QuickStartSection() {
             <span className="ml-2 text-xs" style={{ color: 'var(--text-muted)', fontFamily: "'JetBrains Mono', monospace" }}>terminal</span>
           </div>
           <pre className="p-6 text-sm overflow-x-auto" style={{ background: '#020a14', fontFamily: "'JetBrains Mono', monospace", color: 'var(--teal-light)' }}>
-            <code>{`git clone https://github.com/Ganglet/Anvil && cd Anvil/Anvil_Project\npip install -r requirements.txt\nuvicorn api:app --host 0.0.0.0 --port 8000\n# Then open ganglet.github.io/Anvil for the demo UI`}</code>
+            <code>{`git clone https://github.com/angshuman1211/Anvil && cd Anvil/Anvil_Project\npip install -r requirements.txt\nuvicorn api:app --host 0.0.0.0 --port 8000\n# Then open angshuman1211.github.io/Anvil for the demo UI`}</code>
           </pre>
         </div>
         <div className="rounded-xl overflow-hidden" style={{ border: '1px solid var(--border)' }}>
@@ -491,7 +491,7 @@ function Footer() {
         <span style={{ color: 'var(--text-muted)' }}>·</span>
         <span style={{ color: 'var(--text-muted)' }}>Built for the Red Queen project</span>
         <span style={{ color: 'var(--text-muted)' }}>·</span>
-        <a href="https://github.com/Ganglet/Anvil" target="_blank" rel="noopener noreferrer"
+        <a href="https://github.com/angshuman1211/Anvil" target="_blank" rel="noopener noreferrer"
           className="transition-colors hover:text-white" style={{ color: 'var(--teal)' }}>GitHub ↗</a>
       </div>
     </footer>
@@ -539,7 +539,7 @@ export default function App() {
               style={{ background: 'var(--teal)', color: '#050e1a' }}>
               Live Demo
             </a>
-            <a href="https://github.com/Ganglet/Anvil" target="_blank" rel="noopener noreferrer"
+            <a href="https://github.com/angshuman1211/Anvil" target="_blank" rel="noopener noreferrer"
               className="px-8 py-4 rounded-xl font-bold text-base transition-all hover:scale-105"
               style={{ background: 'rgba(255,255,255,0.06)', color: 'white', border: '1px solid rgba(255,255,255,0.15)' }}>
               GitHub ↗

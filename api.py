@@ -39,7 +39,7 @@ app = FastAPI(
 app.add_middleware(
     CORSMiddleware,
     allow_origins=[
-        "https://ganglet.github.io",
+        "https://angshuman1211.github.io",
         "http://localhost:8080",
         "http://127.0.0.1:8080",
         "http://localhost:5500",
@@ -181,7 +181,7 @@ def _run_audit_job(job_id: str, file_contents: list, model_arg: str, budget: int
 
 @app.get("/")
 def root():
-    return RedirectResponse(url="https://ganglet.github.io/Anvil")
+    return RedirectResponse(url="https://angshuman1211.github.io/Anvil")
 
 
 @app.get("/health")
